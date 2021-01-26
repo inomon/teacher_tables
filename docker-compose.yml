@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  mariadb:
+    build: .
+    ports:
+      - '3336:3306'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_USER=teach
+      - MARIADB_PASSWORD=teach
+      - MARIADB_DATABASE=teachers
